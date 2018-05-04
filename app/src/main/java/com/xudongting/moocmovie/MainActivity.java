@@ -22,6 +22,28 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
+
+    // ┏┓　　　┏┓
+    // ┏┛┻━━━┛┻┓
+    // ┃　　　　　　　┃ 　
+    // ┃　　　━　　　┃
+    // ┃　┳┛　┗┳　┃
+    // ┃　　　　　　　┃
+    // ┃　　　┻　　　┃
+    // ┃　　　　　　　┃
+    // ┗━┓　　　┏━┛
+    // ┃　　　┃ 神兽保佑　　　　　　　　
+    // ┃　　　┃ 代码无BUG！
+    // ┃　　　┗━━━┓
+    // ┃　　　　　　　┣┓
+    // ┃　　　　　　　┏┛
+    // ┗┓┓┏━┳┓┏┛
+    // ┃┫┫　┃┫┫
+    // ┗┻┛　┗┻┛
+    /*老师看这里，就是电影显示列表跟搜索得出的列表我用的是replace Fragment的方法，但是这个方面每次都要重新加载图片
+    会消耗大量的网络资源，有什么好的办法能替代吗？
+     */
+
     private static final String TAG = "ddd";
     private ArrayList<Movice> movices_new = new ArrayList<>();
     private ArrayList<Movice> movices = new ArrayList<>();
@@ -178,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
         listType.add("动画");
         listType.add("惊悚");
         listType.add("恐怖");
+        //获取电影数据
         new Thread() {
             @Override
             public void run() {

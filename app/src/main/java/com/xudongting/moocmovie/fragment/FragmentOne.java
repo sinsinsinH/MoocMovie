@@ -121,7 +121,7 @@ public class FragmentOne extends Fragment {
         public void onBindViewHolder(MainViewHolder holder, final int position) {
             Glide.with(context)
                     .load(movices.get(position).getImageUrl())
-//                    .placeholder(R.drawable.loading1)
+                    .placeholder(R.drawable.loading)
                     .into(holder.imageView);
             holder.textView.setText(movices.get(position).getTitle());
             holder.ratingBar.setRating((movices.get(position).getRating().getAverage())/2);
